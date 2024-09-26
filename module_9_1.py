@@ -2,7 +2,7 @@ def apply_all_func(int_list, *functions):
     results = {}
     for func in functions:
         results.update({func.__name__: func(int_list)})
-        return results
+    return results
 
 int_list = [1, 2, 5, 3, 4, 5]
 
